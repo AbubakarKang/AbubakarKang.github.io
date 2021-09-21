@@ -4,38 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-</head>
+    <!-- Title -->
+    <title>Abubakar's Portfolio</title>
+    <link rel="icon" type="images/png" sizes="16x16" href="images/webIcon.png">
+    <!-- Google Font (Gluten) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100&display=swap" rel="stylesheet">
+    <!-- Google Font (Open Sans Condensed) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/d491bc1a98.js" crossorigin="anonymous"></script>
+    </head>
 <body>
-    <div class="mainContainer">
-        <div class="calculatorContainer">
-            <div class="output"></div>
-            <div class="smallLine"></div>
-            <div class="allButtons">
-                <button>C</button>
-                <button>+/-</button>
-                <button>%</button>
-                <button class="mainOperation">/</button>
-                <button class="number">1</button>
-                <button class="number">2</button>
-                <button class="number">3</button>
-                <button class="mainOperation">X</button>
-                <button class="number">4</button>
-                <button class="number">5</button>
-                <button class="number">6</button>
-                <button class="mainOperation">-</button>
-                <button class="number">7</button>
-                <button class="number">8</button>
-                <button class="number">9</button>
-                <button class="mainOperation">+</button>
-                <button class="number">00</button>
-                <button class="number">0</button>
-                <button class="number">.</button>
-                <button class="equalButton">=</button>
-            </div>    
+    <div class="topNav">
+        <div class="topNav-leftSide">
+            <div class="textLogo">
+                <h1 class="logoText">Abubakar</h1>
+            </div>
+        </div>
+        <div class="topNav-rightSide">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Skills</a>
+            <a href="">Contact Me</a>
+            <i data-themeIcon class="far fa-moon"></i>
         </div>
     </div>
-    <!-- CSS Style File -->
-    <link rel="stylesheet" href="style.css">
+    <div class="homePage">
+        <div class="homeGrid">
+            <div class="homeGrid-leftSide">
+                <h1 class="homeGrid-title">Abubakar Kang</h1>
+                <h1 class="homeGrid-occupation">O Level Student</h1>
+                <p class="homeGrid-desc">A beginner in Javascript and web development & over 2 years of experience in Photoshop</p>
+                <div class="homeGrid-contactBtn">
+                    <a class="gitHub-btn" href="https://github.com/AbubakarKang">
+                        <img src="./images/webGithub.png" class="gitHub-img">
+                    </a>
+                    <a class="discord-btn" href=".#">
+                        <img src="./images/webDiscord.png" class="discord-img">
+                    </a>
+                </div>
+            </div>
+            <div class="homeGrid-rightSide">
+                <img src="./images/webLogo.png">
+            </div>
+        </div>
+    </div>
+    <!-- Other files -->
+    <link rel="stylesheet" href="styleIndex.css">
+    <script src="indexScript.js"></script>
 </body>
 </html>
