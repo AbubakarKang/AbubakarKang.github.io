@@ -15,10 +15,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <!-- Google Font (Gruppo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <!-- Google Font (Barlow) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
+    <!-- Google Font (Raleway) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">   
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/d491bc1a98.js" crossorigin="anonymous"></script>
     </head>
 <body>
+    <!-- Top Navigation -->
     <div class="topNav">
         <div class="topNav-leftSide">
             <div class="textLogo">
@@ -26,31 +39,47 @@
             </div>
         </div>
         <div class="topNav-rightSide">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Skills</a>
-            <a href="">Contact Me</a>
-            <i data-themeIcon class="far fa-moon"></i>
+            <div class="noPhone">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Skills</a>
+                <a href="">Contact Me</a>
+                <i data-themeIcon class="far fa-moon"></i>
+            </div>
+            <div class="phone">
+                <div data-phoneNav class="phoneNav">
+                    <div class="leftSide">
+                        <a href="">Home</a>
+                        <a href="">About</a>
+                        <a href="">Skills</a>
+                        <a href="">Contact Me</a>
+                        <i data-phoneThemeIcon class="far fa-moon"></i>    
+                    </div>
+                    <div class="rightSide">
+                        <h1 data-phoneMenuClose class="phoneNavClose">X</h1>
+                    </div>
+                </div>
+                <img data-phoneMenuOpen src="./images/webMenuLight.png">
+            </div>
         </div>
     </div>
-    <div class="homePage">
-        <div class="homeGrid">
-            <div class="homeGrid-leftSide">
-                <h1 class="homeGrid-title">Abubakar Kang</h1>
-                <h1 class="homeGrid-occupation">O Level Student</h1>
-                <p class="homeGrid-desc">A beginner in Javascript and web development & over 2 years of experience in Photoshop</p>
-                <div class="homeGrid-contactBtn">
-                    <a class="gitHub-btn" href="https://github.com/AbubakarKang">
-                        <img src="./images/webGithub.png" class="gitHub-img">
-                    </a>
-                    <a class="discord-btn" href=".#">
-                        <img src="./images/webDiscord.png" class="discord-img">
-                    </a>
-                </div>
+    <!-- Homepage -->
+    <div class="homepage">
+        <div class="homepage-left">
+            <h1 class="homepage-name">Abubakar Kang</h1>
+            <h1 class="homepage-occupation">O Level Student</h1>
+            <p class="homepage-desc">I'm currently studying O Levels. I study coding and<br>web development as a hobby and I plan to learn<br>many more programming languages in future.</p>
+            <div class="medias">
+                <a class="github-media" href="https://github.com/AbubakarKang">
+                    <img class="github-img" src="./images/webGithub.png">
+                </a>
+                <a class="discord-media" href="">
+                    <img class="discord-img" src="./images/webDiscord.png">
+                </a>
             </div>
-            <div class="homeGrid-rightSide">
-                <img src="./images/webLogo.png">
-            </div>
+        </div>
+        <div class="homepage-right">
+            <img class="webLogo" src="./images/webLogo.png">
         </div>
     </div>
     <!-- Other files -->
