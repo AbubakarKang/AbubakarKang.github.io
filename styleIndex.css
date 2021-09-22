@@ -14,15 +14,26 @@
     --text-color: white;
 }
 
+/* HTML */
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* Body */
 
 body {
     padding: 0;
     margin: 0;
     background: var(--primary-color);
+    overflow-x: hidden;
 }
 
 /* Navigaton */
+
+.topNav-skills, .topNav-home, .topNav-about, .topNav-contact {
+    cursor: pointer;
+}
 
 .phone {
     display: none;
@@ -134,6 +145,7 @@ body {
 
 .discord-media {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .discord-img {
@@ -143,6 +155,174 @@ body {
 
 .webLogo {
     margin-bottom: 20%;
+}
+
+/* About section */
+
+.custom-shape-divider-bottom-1632291245 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1632291245 svg {
+    position: relative;
+    display: block;
+    width: calc(134% + 1.3px);
+    height: 169px;
+}
+
+.custom-shape-divider-bottom-1632291245 .shape-fill {
+    fill: var(--secondary-color);
+}
+
+.aboutBox {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: var(--secondary-color);
+    height: 70vh;
+}
+
+.title {
+    text-align: center;
+}
+
+.title button {
+    outline: none;
+    border: none;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    display: none;
+} 
+
+.title button:hover {
+    box-shadow: 0px 0px 5px black;
+}
+
+.about-title {
+    font-family: 'Abel', sans-serif;
+    font-size: 40px;
+    margin-top: 0;
+    color: var(--text-color);
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.about-left {
+    position: absolute;
+    width: 47%;
+    height: 100%;
+    display: block;
+}
+
+.about-left-title {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--text-color);
+}
+
+.about-left-content {
+    margin-left: 2%;
+    color: var(--text-color);
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.aboutWorksBtn {
+    margin-top: 10%;
+}
+
+.about-works-btn {
+    position: relative;
+    background-color: var(--primary-color);
+    bottom: 5%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about-works-btn:hover {
+    box-shadow: 0px 0px 5px black;
+}
+
+.about-right {
+    position: absolute;
+    width: 47%;
+    height: 100%;
+    right: 0;
+    display: block;
+}
+
+.about-right-title {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--text-color);
+}
+
+.about-right-content {
+    color: var(--text-color);
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 2%;
+}
+
+.aboutCodesBtn {
+    margin-top: 10%;
+}
+
+.about-codes-btn {
+    position: relative;
+    background-color: var(--primary-color);
+    bottom: 5%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about-codes-btn:hover {
+    box-shadow: 0px 0px 5px black;
+}
+
+.custom-shape-divider-top-1632291928 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    top: 170%;
+}
+
+.custom-shape-divider-top-1632291928 svg {
+    position: relative;
+    display: block;
+    width: calc(146% + 1.3px);
+    height: 189px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1632291928 .shape-fill {
+    fill: #705EDC;
 }
 
 /* ----------------------------------------------- For Phones ----------------------------------------------- */
@@ -274,24 +454,73 @@ body {
 
     .github-media{
         text-decoration: none;
+        z-index: 6;
     }
 
     .github-img {
         width: 25px;
+        z-index: 6;
     }
 
     .discord-media {
         text-decoration: none;
+        z-index: 6;
     }
 
     .discord-img {
         width: 25px;
         padding-left: 10px;
+        z-index: 6;
     }
 
     .webLogo {
         width: 70%;
         margin-top: -15%;
+        z-index: 5;
     }
 
+    /* About section */
+
+    .aboutBox {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background: var(--secondary-color);
+        height: 145vh;
+    }
+
+    .content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+        flex-direction: column-reverse;
+    }
+    
+    .about-right {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 45%;
+        transition: 0.3s;
+    }
+
+    .about-left {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        transition: 0.3s;
+    }
+
+    .custom-shape-divider-top-1632291928 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        top: 235%;
+    }    
 }
