@@ -24,8 +24,12 @@ body {
 
 /* Navigaton */
 
+.phone {
+    display: none;
+}
+
 .topNav {
-    width: 100vw;
+    width: 100%;
     height: 10vh;
     background: var(--primary-color);
     display: flex;
@@ -41,6 +45,7 @@ body {
     font-family: 'Gluten', cursive;
     font-size: 40px;
     color: var(--text-color);
+    cursor: default;
 }
 
 .topNav-rightSide {
@@ -55,10 +60,12 @@ body {
     font-size: 25px;
     padding: 5px 10px;
     color: var(--text-color);
+    transition: 0.3s;
 }
 
 .topNav-rightSide a:hover {
     color: var(--secondary-color);
+    transform: scale(1.2);
 }
 
 .topNav-rightSide i {
@@ -66,77 +73,225 @@ body {
     padding: 8px 10px;
     color: var(--text-color);
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .topNav-rightSide i:hover {
     color: var(--secondary-color);
+    transform: scale(1.2);
 }
 
-/* Home Page */
+/* Homepage */
 
-
-.homeGrid {
+.homepage {
     position: absolute;
-    display: flex;
-    align-items: center;
-    top: 10%;
+    width: 90%;
+    height: 70%;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: left;
 }
 
-.homeGrid-title {
+.homepage-right{
+    padding-left: 20px;
+}
+
+.homepage-name {
+    font-family: 'Barlow', sans-serif;
+    font-size: 50px;
     color: var(--text-color);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 42px;
     line-height: 0;
 }
 
-.homeGrid-occupation {
-    color: var(--text-color);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: var(--third-color);
-    font-size: 25px;
-    line-height: 10px;
-}
-
-.homeGrid-desc {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 20px;
+.homepage-occupation {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
     color: var(--text-color);
 }
 
-.homeGrid-contactBtn {
+.homepage-desc {
+    font-family: 'Barlow', sans-serif;
+    color: var(--text-color);
+}
+
+.medias {
     display: flex;
-    position: absolute;
-    bottom: 5%;
+    margin: 0 20px;
 }
 
-.gitHub-btn {
+.github-media{
     text-decoration: none;
-    padding: 10px 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    top: 15px;
-    border-radius: 10px;
-    transition: 0.3s;
 }
 
-.gitHub-img {
-    height: 40px;
+.github-img {
+    width: 25px;
 }
 
-.discord-btn {
+.discord-media {
     text-decoration: none;
-    padding: 10px 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    top: 15px;
-    border-radius: 10px;
-    transition: 0.3s;
 }
 
 .discord-img {
-    height: 40px;
+    width: 25px;
+    padding-left: 10px;
 }
 
-.homeGrid-rightSide img {
-    width: 130%;
+.webLogo {
+    margin-bottom: 20%;
+}
+
+/* ----------------------------------------------- For Phones ----------------------------------------------- */
+
+@media only screen and (max-width: 720px) {
+    /* Navigation */
+    .noPhone {
+        display: none;
+    }
+
+    .phone {
+        display: block;
+    }
+
+    .topNav-rightSide {
+        display: block;
+    }
+
+    #menuIcon {
+        z-index: 12;
+        color: var(--secondary-color);
+    }
+
+    .phoneNav {
+        position: absolute;
+        display: flex;
+        width: 250px;
+        height: 100vh;
+        top: 0;
+        right: -250px;
+        background: var(--secondary-color);
+        z-index: 11;
+        transition: 0.3s;
+    }
+
+    .phone img {
+        display: inline;
+        margin-top: 5px;
+        width: 35px;
+        z-index: 12;
+        cursor: pointer;
+    }
+
+    .topNav-rightSide a {
+        margin-left: 5%;
+        display: block;
+        min-width: 100px;
+    }
+
+    .topNav-rightSide a:hover {
+        color: var(--primary-color);
+        transform: scale(1.2);
+    }
+
+    .topNav-rightSide i {
+        margin-left: 5%;
+    }
+
+    .topNav-rightSide i:hover {
+        color: var(--primary-color);
+        transform: scale(1.2);    
+    }
+
+    .leftSide {
+        padding-right: 40%;
+    }
+
+    .rightSide {
+        padding-top: -40%;
+    }
+
+    .phoneNavClose {
+        font-family: 'Gruppo', cursive;
+        color: var(--text-color);
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .phoneNavClose:hover {
+        color: var(--primary-color);
+    }
+
+    /* Homepage */
+
+    .homepage {
+        position: absolute;
+        width: 90%;
+        height: 85%;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: left;
+    }
+
+    .homepage-right{
+        text-align: center;
+    }
+
+    .homepage-name {
+        text-align: center;
+        font-family: 'Barlow', sans-serif;
+        font-size: 50px;
+        color: var(--text-color);
+        line-height: 0;
+    }
+
+    .homepage-occupation {
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 30px;
+        color: var(--text-color);
+    }
+
+    .homepage-desc {
+        text-align: center;
+        font-family: 'Barlow', sans-serif;
+        color: var(--text-color);
+    }
+
+    .medias {
+        display: flex;
+        justify-content: center;
+        margin: 0 20px;
+    }
+
+    .github-media{
+        text-decoration: none;
+    }
+
+    .github-img {
+        width: 25px;
+    }
+
+    .discord-media {
+        text-decoration: none;
+    }
+
+    .discord-img {
+        width: 25px;
+        padding-left: 10px;
+    }
+
+    .webLogo {
+        width: 70%;
+        margin-top: -15%;
+    }
+
 }
