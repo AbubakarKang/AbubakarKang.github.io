@@ -6,9 +6,14 @@ const phoneMenuOpen = document.querySelector('[data-phoneMenuOpen]')
 const phoneMenuClose = document.querySelector('[data-phoneMenuClose]')
 const phoneNav = document.querySelector('[data-phoneNav]')
 const discordMedia = document.querySelector('[data-discordMedia]')
-const aboutContentButton = document.querySelector('[data-switchAboutContent]')
-const leftAboutContent = document.querySelector('[data-leftContent]')
-const rightAboutContent = document.querySelector('[data-rightContent]')
+const discordImg = document.querySelector('[data-discordImg]')
+const aboutSection = document.querySelector('[data-aboutSection]')
+const aboutSectionPhone = document.querySelector('[data-aboutSectionPhone]')
+const skillsSection = document.querySelector('[data-skillsSection]')
+const skillsSectionPhone = document.querySelector('[data-skillsSectionPhone]')
+const designsSection = document.querySelector('[data-designsSection]')
+const designsSectionPhone = document.querySelector('[data-designsSectionPhone]')
+const GoToDesigns = document.querySelector('[data-GoToDesigns]')
 
 //------------------------------------- FUNCTION CALLS -------------------------------------\\
 
@@ -17,7 +22,17 @@ phoneMenuOpen.addEventListener("click", openPhoneMenu)
 phoneMenuClose.addEventListener("click", closePhoneMenu)
 phoneThemeIcon.addEventListener("click", toggleDisplayTheme)
 discordMedia.addEventListener("click", clipboardDiscord)
-aboutContentButton.addEventListener("click", changeAboutContent)
+discordImg.addEventListener("mouseout", changeTooltipText)
+aboutSection.addEventListener("click", goToAboutSection)
+aboutSectionPhone.addEventListener("click", goToAboutSection)
+skillsSection.addEventListener("click", goToSkillsSection)
+skillsSectionPhone.addEventListener("click", goToSkillsSectionPhone)
+designsSection.addEventListener("click", goToDesignsSection)
+designsSectionPhone.addEventListener("click", goToDesignsSectionPhone)
+
+setInterval(() => {
+    changeGTDBtnAttribute()
+}, 10);
 
 //----------------------------------------- OTHERS -----------------------------------------\\
 
@@ -38,15 +53,9 @@ function toggleDisplayTheme() {
     }
 }
 
-function changeAboutContent() {
-    if (rightAboutContent.style.display == "none") {
-        rightAboutContent.style.display = "block"
-        leftAboutContent.style.display = "none"
-        aboutContentButton.innerHTML = `Designing`
-    } else {
-        rightAboutContent.style.display = "none"
-        leftAboutContent.style.display = "block"
-        aboutContentButton.innerHTML = `Coding`
+function changeGTDBtnAttribute() {
+    if (getComputedStyle(GoToDesigns).content == "phone") {
+        GoToDesigns.addEventListener("click", goToDesignsSectionPhone)
     }
 }
 
@@ -59,5 +68,30 @@ function closePhoneMenu() {
 }
 
 function clipboardDiscord() {
+    discordMedia.setAttribute("data-tooltip", "Copied discord tags!")
     navigator.clipboard.writeText("TheHacker#4418");
+}
+
+function changeTooltipText() {
+    discordMedia.setAttribute("data-tooltip", "Click to copy discord tags!")
+}
+
+function goToAboutSection() {
+    window.scrollTo(0, 565)
+}
+
+function goToSkillsSection() {
+    window.scrollTo(0, 1233)
+}
+
+function goToSkillsSectionPhone() {
+    window.scrollTo(0, 1638)
+}
+
+function goToDesignsSection() {
+    window.scrollTo(0, 1947)
+}
+
+function goToDesignsSectionPhone() {
+    window.scrollTo(0, 2739)
 }
