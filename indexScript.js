@@ -13,7 +13,13 @@ const skillsSection = document.querySelector('[data-skillsSection]')
 const skillsSectionPhone = document.querySelector('[data-skillsSectionPhone]')
 const designsSection = document.querySelector('[data-designsSection]')
 const designsSectionPhone = document.querySelector('[data-designsSectionPhone]')
+const contactSectionPhone = document.querySelector('[data-contactSectionPhone]')
 const GoToDesigns = document.querySelector('[data-GoToDesigns]')
+const sendEmailBtn = document.querySelector('[data-sendEmailBtn]')
+const contactFirstName = document.querySelector('[data-contactFirstName]')
+const contactLastName = document.querySelector('[data-contactLasttName]')
+const contactSubject = document.querySelector('[data-contactSubject]')
+const contactMessage = document.querySelector('[data-contactMessage]')
 
 //------------------------------------- FUNCTION CALLS -------------------------------------\\
 
@@ -29,6 +35,8 @@ skillsSection.addEventListener("click", goToSkillsSection)
 skillsSectionPhone.addEventListener("click", goToSkillsSectionPhone)
 designsSection.addEventListener("click", goToDesignsSection)
 designsSectionPhone.addEventListener("click", goToDesignsSectionPhone)
+sendEmailBtn.addEventListener("click", sendContactMail)
+contactSectionPhone.addEventListener("click", goToContactSectionPhone)
 
 setInterval(() => {
     changeGTDBtnAttribute()
@@ -57,6 +65,27 @@ function changeGTDBtnAttribute() {
     if (getComputedStyle(GoToDesigns).content == "phone") {
         GoToDesigns.addEventListener("click", goToDesignsSectionPhone)
     }
+}
+
+function sendContactMail() {
+    if (contactFirstName.value === "" || contactFirstName.value == null) {
+        alert("All fields must be filled in!")
+        return false
+    }
+    if (contactLastName.value === "" || contactLastName.value == null) {
+        alert("All fields must be filled in!")
+        return false
+    }
+    if (contactSubject.value === "" || contactSubject.value == null) {
+        alert("All fields must be filled in!")
+        return false
+    } if (contactMessage.value === "" || contactMessage.value == null) {
+        alert("All fields must be filled in!")
+        return false
+    }
+    var emailSubject = contactSubject.value + " || Name: " + contactFirstName.value + " " +contactLastName.value
+    var emailContent = contactMessage.value
+    window.open(`mailto:kangabubakar33@gmail.com?subject=`+emailSubject+`&body=`+emailContent)
 }
 
 function openPhoneMenu() {
@@ -94,4 +123,8 @@ function goToDesignsSection() {
 
 function goToDesignsSectionPhone() {
     window.scrollTo(0, 2739)
+}
+
+function goToContactSectionPhone() {
+    window.scrollTo(0, 3561)
 }
