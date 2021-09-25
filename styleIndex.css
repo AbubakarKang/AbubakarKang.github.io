@@ -418,15 +418,6 @@ body {
     width: 200px;
 }
 
-.skillHTMLdiv {
-    position: absolute;
-    margin-top: 1px;
-    width: 196px;
-    height: 196px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px var(--text-color);
-}
-
 .html-skill-content {
     text-align: center;
     margin-top: 85%;
@@ -450,15 +441,6 @@ body {
 .skillCSSIMG {
     position: absolute;
     width: 200px;
-}
-
-.skillCSSdiv {
-    position: absolute;
-    margin-top: 1px;
-    width: 196px;
-    height: 196px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px var(--text-color);
 }
 
 .css-skill-content {
@@ -490,15 +472,6 @@ body {
     margin-left: 7%;
 }
 
-.skillJAVAdiv {
-    position: absolute;
-    margin-top: 1px;
-    width: 196px;
-    height: 196px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px var(--text-color);
-}
-
 .java-skill-content {
     text-align: center;
     margin-top: 85%;
@@ -526,15 +499,6 @@ body {
 .skillPhotoshopIMG {
     position: absolute;
     width: 200px;
-}
-
-.skillPhotoshopDiv {
-    position: absolute;
-    margin-top: 1px;
-    width: 196px;
-    height: 196px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px var(--text-color);
 }
 
 .photoshop-skill-content {
@@ -1127,15 +1091,6 @@ body {
         width: 150px;
     }
     
-    .skillHTMLdiv {
-        position: absolute;
-        margin-top: 1px;
-        width: 146px;
-        height: 146px;
-        border-radius: 50%;
-        box-shadow: 0px 0px 5px var(--text-color);
-    }
-    
     .html-skill-content {
         text-align: center;
         margin-top: 80%;
@@ -1164,15 +1119,6 @@ body {
     .skillCSSIMG {
         position: absolute;
         width: 150px;
-    }
-    
-    .skillCSSdiv {
-        position: absolute;
-        margin-top: 1px;
-        width: 146px;
-        height: 146px;
-        border-radius: 50%;
-        box-shadow: 0px 0px 5px var(--text-color);
     }
     
     .css-skill-content {
@@ -1210,15 +1156,6 @@ body {
         margin-left: 7%;
     }
     
-    .skillJAVAdiv {
-        position: absolute;
-        margin-top: 1px;
-        width: 146px;
-        height: 146px;
-        border-radius: 50%;
-        box-shadow: 0px 0px 5px var(--text-color);
-    }
-    
     .java-skill-content {
         text-align: center;
         margin-top: 90%;
@@ -1247,15 +1184,6 @@ body {
     .skillPhotoshopIMG {
         position: absolute;
         width: 150px;
-    }
-    
-    .skillPhotoshopDiv {
-        position: absolute;
-        margin-top: 1px;
-        width: 146px;
-        height: 146px;
-        border-radius: 50%;
-        box-shadow: 0px 0px 5px var(--text-color);
     }
     
     .photoshop-skill-content {
