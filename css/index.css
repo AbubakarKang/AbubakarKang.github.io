@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+
+:root {
+	--main-color: #0f0f0f;
+	--text-color: #fafafa;
+}
+
+body {
+	margin: 0;
+	background: var(--main-color);
+}
+
+.my-desc {
+	line-height: 0;
+	margin-left: 40px;
+	color: var(--text-color);
+	font-family: "Amatic SC", cursive;
+}
+
+.my-desc h1 {
+	font-size: 150px;
+	text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.9);
+}
+
+.my-desc h2 {
+	font-size: 24px;
+	font-family: "Comfortaa", cursive;
+}
+
+.bottom-nav {
+	left: 50%;
+	width: 400px;
+	bottom: 50px;
+	display: flex;
+	font-size: 24px;
+	position: absolute;
+	align-items: center;
+	justify-content: space-between;
+	transform: translate(-50%, -50%);
+	font-family: "Maven Pro", sans-serif;
+}
+
+.bottom-nav a {
+	text-decoration: none;
+	color: var(--text-color);
+}
