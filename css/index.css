@@ -92,28 +92,3 @@ body {
 	transition: 200ms;
 	position: absolute;
 }
-
-.floating-bubbles {
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	line-height: 0;
-	overflow: hidden;
-	position: absolute;
-}
-
-.bubble.first {
-	width: 150px;
-	height: 150px;
-	clip-path: circle(50% at 50% 50%);
-	transform: translate(20%, 90%);
-	background: rgba(255, 255, 255, 0.5);
-}
-
-.bubble.second {
-	width: 100px;
-	height: 100px;
-	transform: translateY(50%);
-	clip-path: circle(50% at 0% 50%);
-	background: rgba(255, 255, 255, 0.5);
-}
