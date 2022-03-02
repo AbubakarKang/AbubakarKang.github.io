@@ -5,14 +5,17 @@
 :root {
 	--main-color: #0f0f0f;
 	--text-color: #fafafa;
+	--second-color: #8500fa;
 }
 
 body {
 	margin: 0;
-	background: var(--main-color);
+	overflow-x: hidden;
+	background: var(--second-color);
 }
 
 .my-desc {
+	z-index: 99;
 	line-height: 0;
 	margin-left: 40px;
 	color: var(--text-color);
@@ -45,4 +48,72 @@ body {
 .bottom-nav a {
 	text-decoration: none;
 	color: var(--text-color);
+}
+
+.triangle-shape {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
+	line-height: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+.triangle-shape svg {
+	height: 660px;
+	display: block;
+	position: relative;
+	width: calc(300% + 1.3px);
+}
+
+.triangle-shape .shape-fill {
+	fill: var(--main-color);
+}
+
+.my-socials {
+	width: 80px;
+	display: flex;
+	margin-top: 150px;
+	margin-left: 40px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.my-socials img {
+	width: 30px;
+}
+
+.logo-img {
+	right: 0;
+	z-index: -1;
+	width: 600px;
+	bottom: 150px;
+	transition: 200ms;
+	position: absolute;
+}
+
+.floating-bubbles {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	line-height: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+.bubble.first {
+	width: 150px;
+	height: 150px;
+	clip-path: circle(50% at 50% 50%);
+	transform: translate(20%, 90%);
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.bubble.second {
+	width: 100px;
+	height: 100px;
+	transform: translateY(50%);
+	clip-path: circle(50% at 0% 50%);
+	background: rgba(255, 255, 255, 0.5);
 }
