@@ -46,7 +46,10 @@
         <div class="loader"></div>
     </div>
     <script>
+        document.body.style.pointerEvents = "none"
+
         window.onload = function() {
+            document.body.style.pointerEvents = "auto"
             document.querySelector(".loader-div").style.animation = "fadeOut 500ms linear forwards";
         }
     </script>
