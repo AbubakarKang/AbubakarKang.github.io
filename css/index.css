@@ -92,3 +92,7 @@ body {
 	transition: 200ms;
 	position: absolute;
 }
+
+.typed-cursor {
+	display: none;
+}

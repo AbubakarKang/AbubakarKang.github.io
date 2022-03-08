@@ -11,6 +11,8 @@
     <!-- CSS File -->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/loader.css">
+    <!-- JS Files -->
+    <script src="typed.js"></script>
 </head>
 
 <body>
@@ -22,7 +24,7 @@
     </div>
     <div class="my-desc">
         <h1>Abubakar</h1>
-        <h2>Self-taught fullstack Javascript Developer</h2>
+        <h2 id="typed-desc"></h2>
     </div>
     <div class="my-socials">
         <div class="github">
@@ -52,6 +54,12 @@
             document.body.style.pointerEvents = "auto"
             document.querySelector(".loader-div").style.animation = "fadeOut 500ms linear forwards";
         }
+
+        var typed = new Typed("#typed-desc", {
+            strings: ["Self-taught fullstack Javascript Developer"],
+            startDelay: 1000,
+            typeSpeed: 35,
+        });
     </script>
 </body>
 
