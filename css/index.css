@@ -80,6 +80,10 @@ body {
 	justify-content: space-between;
 }
 
+.social {
+	transition: 300ms;
+}
+
 .my-socials img {
 	width: 30px;
 }
