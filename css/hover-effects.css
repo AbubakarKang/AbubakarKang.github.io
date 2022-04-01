@@ -1,4 +1,3 @@
 .social:hover {
-	margin-bottom: 20px;
-	transform: scale(1.15);
+	transform: scale(1.15) translateY(-10px);
 }
